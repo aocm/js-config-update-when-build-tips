@@ -35,9 +35,10 @@ const hoge6 = ${process.env.HOGE_6};
 
 ```
 実行結果
+```
 /app # node config-output-tool.js 
 write end
-
+```
 ```js
 const hoge1 = hoge1;
 const hoge2 = hoge2;
