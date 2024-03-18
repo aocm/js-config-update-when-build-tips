@@ -5,3 +5,5 @@ phases:
     commands:
       - echo `date`
       - echo commit id $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - node output-commit-id-in-codebuild.js
+      - cat sample.json
