@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo `date`
+      - echo commit id $CODEBUILD_RESOLVED_SOURCE_VERSION
