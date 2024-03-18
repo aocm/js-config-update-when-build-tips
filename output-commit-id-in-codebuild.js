@@ -1,10 +1,6 @@
 const fs = require('fs');
 
-const text = `
-{
-    "commit_id": ${process.env.CODEBUILD_RESOLVED_SOURCE_VERSION}
-}
-`
+const text = `{"commit_id": ${process.env.CODEBUILD_RESOLVED_SOURCE_VERSION}}`
 
 try {
     fs.writeFileSync("sample.json", text);
